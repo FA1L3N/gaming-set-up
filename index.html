@@ -90,6 +90,38 @@
       animation-delay: 0.05s;
     }
 </style>
+
+<style>
+.tier-buttons {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.tier-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.tier-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.setup-card {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .setup-card h3 { font-size: 1.2em; }
+  .tier-buttons button { padding: 8px 16px; }
+}
+</style>
+
 </head>
 <body>
   <h1>🎮 Gaming Setups for Beginners</h1>
@@ -128,5 +160,60 @@
   <footer>
     Disclosure: As an Amazon Associate I earn from qualifying purchases.
   </footer>
+
+<section id="setups">
+  
+<div class="tier-buttons">
+  <button onclick="showSetup('750')">$750 Budget</button>
+  <button onclick="showSetup('1000')">$1000 Pro</button>
+  <button onclick="showSetup('3000')">$3000 Prebuilt</button>
+</div>
+
+  <div id="setup-750" class="tier-section">
+    <div class="setup-card">
+      <h3>$750 Budget Gaming Setup (2025 Edition)</h3>
+      <ul>
+        <li><strong>CPU:</strong> <a href="https://www.amazon.com/dp/B09Q2N7WLT?tag=fallen007-20">Intel Core i3‑12100F</a></li>
+        <li><strong>GPU:</strong> <a href="https://www.amazon.com/dp/B0BJ7ZWCTZ?tag=fallen007-20">Skytech Nebula (RTX 3050 + 16GB + 500GB)</a></li>
+        <li><strong>RAM:</strong> <a href="https://www.amazon.com/dp/B07WJJFYF9?tag=fallen007-20">TeamGroup 16GB DDR4</a></li>
+        <li><strong>Storage:</strong> <a href="https://www.amazon.com/dp/B0B7C8ZG5Q?tag=fallen007-20">Crucial P3 500GB NVMe</a></li>
+        <li><strong>Monitor:</strong> <a href="https://www.amazon.com/dp/B07CVL2D2S?tag=fallen007-20">Acer SB220Q</a></li>
+        <li><strong>Peripherals:</strong> <a href="https://www.amazon.com/dp/B07DLX26BB?tag=fallen007-20">Havit Combo</a></li>
+      </ul>
+    </div>
+    </div>
+  <div id="setup-1000" class="tier-section" style="display:none">
+    <div class="setup-card">
+      <h3>$1000 Pro Gaming Setup</h3>
+      <ul>
+        <li><strong>CPU:</strong> <a href="https://www.amazon.com/dp/B09VCXMX2R?tag=fallen007-20">Intel Core i5‑12400F</a></li>
+        <li><strong>GPU:</strong> <a href="https://www.amazon.com/dp/B09V3HN1XC?tag=fallen007-20">XFX Speedster SWFT309 RX 6700 XT</a></li>
+        <li><strong>RAM:</strong> <a href="https://www.amazon.com/dp/B08BNQKL5L?tag=fallen007-20">Corsair Vengeance 16GB DDR4</a></li>
+        <li><strong>Storage:</strong> <a href="https://www.amazon.com/dp/B0B6QXV3WY?tag=fallen007-20">WD Black SN770 1TB NVMe</a></li>
+        <li><strong>Monitor:</strong> <a href="https://www.amazon.com/dp/B0835P6SXV?tag=fallen007-20">AOC 24G2 144Hz IPS</a></li>
+        <li><strong>Peripherals:</strong> <a href="https://www.amazon.com/dp/B084DGZ8WJ?tag=fallen007-20">Redragon S101 Combo</a></li>
+      </ul>
+    </div>
+    </div>
+  <div id="setup-3000" class="tier-section" style="display:none">
+    <div class="setup-card">
+      <h3>$3000 Prebuilt Setup for Power Users</h3>
+      <ul>
+        <li><strong>PC:</strong> <a href="https://www.amazon.com/dp/B0BSQNNBTL?tag=fallen007-20">Skytech Prism II (RTX 4090, Ryzen 9 7950X)</a></li>
+        <li><strong>Monitor:</strong> <a href="https://www.amazon.com/dp/B08J4F2Q2N?tag=fallen007-20">LG Ultragear 32” 165Hz QHD</a></li>
+        <li><strong>Peripherals:</strong> <a href="https://www.amazon.com/dp/B0B92QHR7T?tag=fallen007-20">Logitech G915 Wireless + G Pro X Superlight</a></li>
+      </ul>
+    </div>
+    </div>
+</section>
+
+<script>
+function showSetup(tier) {
+  ['750', '1000', '3000'].forEach(id => {
+    document.getElementById('setup-' + id).style.display = (id === tier) ? 'block' : 'none';
+  });
+}
+</script>
+
 </body>
 </html>
