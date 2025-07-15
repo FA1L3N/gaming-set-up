@@ -9,40 +9,56 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #111;
+      background: linear-gradient(135deg, #1f1f2e, #14141c);
       color: #eee;
       margin: 0;
       padding: 2rem;
-      line-height: 1.6;
     }
     h1 {
       text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .card {
-      background-color: #1a1a1a;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      background-color: #222;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
       margin: 2rem auto;
-      max-width: 700px;
+      max-width: 800px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
     }
     .card h2 {
+      font-size: 1.75rem;
+      color: #00e6e6;
       margin-top: 0;
-      color: #90cdf4;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.6rem;
     }
     a {
       color: #90cdf4;
       text-decoration: none;
+      transition: color 0.2s ease;
     }
     a:hover {
       text-decoration: underline;
+      color: #63b3ed;
     }
     footer {
       text-align: center;
-      margin-top: 3rem;
-      color: #777;
+      margin-top: 4rem;
+      color: #888;
       font-size: 0.9rem;
     }
   </style>
@@ -51,7 +67,7 @@
   <h1>🎮 Gaming Setups for Beginners</h1>
 
   <div class="card">
-    <h2>💻 Budget PC Setup Under $800 (2025 Edition)</h2>
+    <h2>💻 Budget Setup Under $800 (2025 Edition)</h2>
     <ul>
       <li>CPU: <a href="https://www.amazon.com/dp/B092L9GF5N?tag=fallen007-20" target="_blank">AMD Ryzen 5 5600G</a></li>
       <li>GPU: <a href="https://www.amazon.com/dp/B07ZHZL2JB?tag=fallen007-20" target="_blank">GTX 1660 Super</a></li>
