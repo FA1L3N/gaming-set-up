@@ -1,2 +1,2 @@
-# gaming-set-up
-On a budget gaming setups
+# gaming-set-up for beginners 
+On a budget, gaming setups 
